@@ -1,4 +1,4 @@
-const pool = require('../config/postgres.config');
+const pool = require('../config/db1');
 
 exports.getAll = async () => {
   const res = await pool.query('SELECT * FROM members');
